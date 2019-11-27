@@ -40,6 +40,14 @@ public class Solution {
     public static void main(String[] args) {
         double meal_cost = 12.00D;// scanner.nextDouble();
         //scanner.skip("(\r\n|[\n\r\u2028\u2029\u0085])?");
+           Scanner scan = new Scanner(System.in);
+        int i = scan.nextInt();
+        String s = scan.nextLine();
+        double d = scan.nextDouble();
+        
+        
+        
+        
 
         int tip_percent = 20;// scanner.nextInt();
         //scanner.skip("(\r\n|[\n\r\u2028\u2029\u0085])?");
