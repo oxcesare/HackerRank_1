@@ -5,7 +5,6 @@
  */
 package JavaPriorityQueue;
 
-import com.sun.javafx.scene.control.skin.VirtualFlow;
 import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.List;
