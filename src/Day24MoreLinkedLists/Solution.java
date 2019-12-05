@@ -30,13 +30,15 @@ class Solution {
 
         while (before.next != null) {
             if (before.data == before.next.data) {
-                before.next = before.next.next;
+                set.add(before.next);
+                before.next = before.next.next;                
             } else {
                 before = before.next;
+                set.add(before);
             }
         }
-
-        return headFinal;
+       
+        return before;
     }
 
     public static Node insert(Node head, int data) {
