@@ -50,7 +50,7 @@ public class Solution2 {
     static class TestDataExactlyTwoDifferentMinimums {
 
         public static int[] get_array() {
-            int[] arr = {0, 1};
+            int[] arr = {0, 0};
 
             return arr;
         }

@@ -23,22 +23,18 @@ class Node {
 class Solution {
 
     public static Node removeDuplicates(Node head) {
-
-        Node before = head;
-        Set<Node> set = new HashSet<>();
-        Node headFinal = null;
-
-        while (before.next != null) {
-            if (before.data == before.next.data) {
-                set.add(before.next);
-                before.next = before.next.next;                
+        if (head == null) {
+            return null;
+        }
+        Node n = head;
+        while (n.next != null) {
+            if (n.data == n.next.data) {
+                n.next = n.next.next;
             } else {
-                before = before.next;
-                set.add(before);
+                n = n.next;
             }
         }
-       
-        return before;
+        return head;
     }
 
     public static Node insert(Node head, int data) {
