@@ -32,6 +32,17 @@ public class Solution {
         } else {
             integers = new int[f.length()];
         }
+        
+        /*
+           
+           5 
+          binary representation is 1010 =  2 (1) 
+        
+          7  
+          binary representation is 1110 =  3 (1) 
+        
+        
+        */
 
         while (i < f.length()) {
 
@@ -47,6 +58,8 @@ public class Solution {
             }
             /* Pregunto si es el final del arreglo para que 
                considere todas las posiciones
+            
+            
              */
             if (i == f.length() - 1) {
                 t++;
